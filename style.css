@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+p{
+    margin: 0;
+}
+
+p+p{
+    margin-top: 15px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 50px;
+
+    font-weight: 500px; /*Жирный қылады*/
+    font-size: 16px;
+    text-transform: uppercase;
+
+    background-color: #f6762c;
+    border-radius: 5PX;
+
+    transition: opacity 0.3s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.btn--small {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;/*сурет 100 пайыз берілген орынды алады асып кетпейді*/
+}
+
+/*Shapka*/
+
+.header {
+    padding: 25px 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    gap:30PX;
+}
+
+.header__nav a{
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.header__nav a.active{
+    opacity: 1;
+}
+
+.header__nav a:hover{
+    opacity: 0.9;
+}
+
+.main {
+}
+/*main*/
+
+.welcome {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: -100px;
+    padding: 240px 0;
+    background-image: url("./images/welcome-bg.jpg");
+    background-repeat: no-repeat;/*Қайталауды өшіреді*/
+    background-size: cover;/*суретті фонға тура размер беріп жатқызады*/
+    background-position: center;/*суретті орнағы қояды*/
+}
+
+.welcome_text{
+    width: 555px;
+}
+
+.welcome__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 7px;
+}
+
+.welcome__title {
+    font-size: 58PX;
+    font-weight: 500;
+}
+
+.welcome__desc {
+    margin: 40px 0;
+    font-size: 18px;
+    font-weight: 400;
+    opacity:0.7;
+}
+
+/*Section-food*/
+.food-list {
+    padding: 100px 0;
+}
+
+.food-list .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap; /*Егер сайтты кішірейткен кезде фото симай қалма астыға түседі*/
+    gap:40px 10px;
+}
+
+.food-list__card {
+    text-align: center;
+    width: 260px;
+    overflow:hidden; /*Суреттің артық жерін кеседі*/
+    background-color: #312F30;
+    border-radius: 10px;
+}
+
+.food-list__img {
+    width: 100%;;
+    height: 175px;
+    object-fit: cover;
+}
+
+.food-list__text-wrapper{
+    padding: 30px 20px;
+}
+
+.food-list__title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.food-list__desc {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/*Order*/
+.order {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.order .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 90px;
+}
+
+.order__img {
+    max-width: 470px;
+}
+
+.order__text {
+    max-width: 360px;
+}
+
+.order__title {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.order__desc {
+    margin-bottom: 15px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.order__price {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color:#F6762C;
+}
+
+.order__price-old {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    opacity: 0.5;
+}
+
+.order__price + .order__price{
+    margin-left: 3px;
+}
+
+.order .btn{
+    margin-top: 10px;
+}
+
+/**/
+.product {
+    padding: 150px 0;
+}
+
+.product .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product__card {
+    box-sizing: border-box;
+    width: 555px;
+    min-height: 300;
+
+    padding: 60px 30px 60px 290px;
+    background-color: #312F30; /*фото жүктелмей қалса фото тұратын орынды бояйды*/ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product__card:nth-child(even){
+    padding-left: 30px;
+    padding-right: 290px;
+}
+
+.product__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.product__desc {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.product__price {
+    font-weight: 500;
+    font-size: 16px;
+    color:#F6762C;
+    letter-spacing: 0.1em;
+}
+
+.product__price + .product__price{
+    margin-left: 5px;
+}
+
+.order__price-old{
+    text-decoration-line: line-through;
+    opacity: 0.5;
+}
+
+.product .btn{
+    margin-top: 10px;
+}
+
+.card-queen{
+    background-image: url("./images/product-1.jpg");
+
+}
+
+.card-hut{
+    background-image: url("./images/product-2.jpg");
+}
+
+.card-king{
+    background-image: url("./images/product-3.jpg");
+}
+
+.card-papa{
+    background-image: url("./images/product-4.jpg");
+}
+
+/*Feedback*/
+.feedback {
+    padding-bottom: 200px;
+}
+
+.feedback .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
+}
+
+.feedback__text {
+    margin:0;
+    width: 370px;
+    text-align: center;
+}
+
+.feedback__text::before{
+    content: url("./images/icons/quote.svg");
+}
+
+.feedback__desc {
+    opacity: 0.7;
+    margin: 30px 0;
+}
+
+.feedback__author {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.feedback__subauthor {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.7;
+
+    display: block;
+}
+/*Download*/
+
+.download {
+    padding: 60px 0;
+    background-color: #312F30;
+}
+
+.download .container {
+    display: flex;
+    justify-content: space-around;/*автоматты түрде орналастырады арақашықтықты тура қылып*/
+}
+
+.download__title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/*Footer*/
+.footer {
+    padding: 120px 0;
+}
+
+.footer a{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footer .footer__title {
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__contacts {
+
+}
+
+.footer__logo {
+
+}
+
+.footer__link {
+
+}
+
+.footer__link-mail {
+
+}
+
+.footer__link-web {
+
+}
+
+.footer__nav {
+
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "contacts";
+}
+
+.footer__list-title {
+
+}
+
+
+.footer__inner-list {
+
+}
+
+.footer__list-item {
+
+}
+
+.footer__socials {
+
+}
+
+.footer__socials-icons {
+
+}
+
+.footer__socials-link {
+
+}
